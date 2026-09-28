@@ -1,0 +1,12 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="ExampleComponents" Directory="INSTALLFOLDER">
+      <Component>
+        <File Source="$(var.DemoApp.TargetDir)\DemoApp.exe" />
+      </Component>
+		<Component>
+			<File Source="$(var.DemoApp.TargetDir)LibraryDemo.dll" />
+		</Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
